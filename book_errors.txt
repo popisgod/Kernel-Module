@@ -1,0 +1,11 @@
+error tracking 
+
+--- 
+
+page 31 in pdf: 
+ incorrect: 
+	 struct cdev *my_dev = cdev_alloc();
+	 my_cdev->ops = &my_fops; 
+ correct: 
+	 struct cdev *my_cdev = cdev_alloc();
+	 my_cdev->ops = &my_fops; 
